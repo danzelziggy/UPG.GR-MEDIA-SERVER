@@ -15,7 +15,7 @@ cd ~/working
 git clone git://github.com/upggr/nginx.git
 git clone git://github.com/upggr/nginx-rtmp-module.git
 git clone git://github.com/danzelziggy/UPG.GR-MEDIA-SERVER.git
-cp ~/working/UPG.GR-MEDIA-SERVER/conf/nginx.txt /etc/init.d/nginx
+sudo wget https://raw.github.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
 cp ~/working/UPG.GR-MEDIA-SERVER/conf/refresh.txt /etc/cron.daily/refreshwww
 sudo chmod +x /etc/cron.daily/refreshwww
 sudo chmod +x /etc/init.d/nginx
